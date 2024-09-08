@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --primary-blue: hsl(215, 51%, 70%);
+  --highlight-cyan: hsl(178, 100%, 50%);
+  --text-white: hsl(0, 0%, 100%);
+  --border-color: hsl(215, 32%, 27%);
+}
+
+body {
+  background-color: var(--main-bg);
+  font-family: "Outfit", sans-serif;
+  color: var(--primary-blue);
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.main-card {
+  width: min(87.5%, 22rem);
+  margin: 9.5rem auto;
+  background: var(--card-bg);
+  padding: 1.5rem 1.6rem 2rem;
+  border-radius: 15px;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+}
+
+.image-container {
+  max-width: 300px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main-image {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  height: auto;
+}
+
+.view {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.title {
+  font-size: 1.4rem;
+  color: var(--text-white);
+  margin: 1.4rem 0 0.75rem;
+  font-weight: 400;
+}
+
+.description {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.015em;
+  font-weight: 300;
+}
+
+.ethereum-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.eth {
+  font-weight: 700;
+  color: var(--highlight-cyan);
+}
+
+.icon {
+  margin-right: 0.5rem;
+}
+
+.creator-info {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.avatar {
+  width: 2rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+  border: 1px solid var(--text-white);
+}
+
+.creator-text {
+  font-weight: 300;
+}
+
+.creator-name {
+  color: var(--text-white);
+}
+
+.title:hover,
+.creator-name:hover {
+  cursor: pointer;
+  color: var(--highlight-cyan);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--text-white);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: var(--highlight-cyan);
+}
+
+@media (max-width: 300px) {
+  .ethereum-info {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .ethereum-info {
+    flex-direction: column;
+  }
+}
